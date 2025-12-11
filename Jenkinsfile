@@ -30,7 +30,7 @@ pipeline {
             # Prepare scan directory
             rm -rf temp_scan_dir
             mkdir temp_scan_dir
-            cp main.go go.mod go.sum README.md Dockerfile* temp_scan_dir/ || true
+            cp -a . temp_scan_dir/ || true
 
             /tmp/snyk auth $SNYK_TOKEN
             /tmp/snyk code test ./temp_scan_dir --sarif-file-output=snyk-results.sarif || true
