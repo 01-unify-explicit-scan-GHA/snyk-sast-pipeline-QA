@@ -39,7 +39,7 @@ Now go build something awesome! Here are some **ideas** to get your creative jui
 * Send a webcam on an embedded device to your browser with no additional server required!
 * Securely send data between two servers, without using pub/sub.
 * Record your webcam and do special effects server side.
-* Build a conferencing application that processes audio/video and make decisions off of it.
+* Build a conferencing application that processes audio/video and make decisions off of it..
 * Remotely control a robots and stream its cameras in realtime.
 
 ### Want to learn more about WebRTC?
