@@ -106,6 +106,16 @@ EOF
       }
     }
   }
+  stage('Security Scan') {
+            steps {
+                registerSecurityScan(
+                    // Security Scan to include
+                    artifacts: "snyk-results.sarif",
+                    format: "sarif",
+                    archive: true
+                )
+            }
+        }
 
   post {
     always {
